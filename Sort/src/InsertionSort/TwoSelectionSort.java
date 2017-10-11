@@ -8,7 +8,7 @@ package InsertionSort;
  */
 public class TwoSelectionSort {
     public static void main(String[] args){
-        int[] a=new int[]{2,1,4,7,2,6,10,8,9};
+        int[] a=new int[]{2,1,4,7,3,6,10,8,9};
 
         for(int i=0;i<a.length/2;i++){
             int max=i;  //记录最大值的位置
@@ -21,14 +21,21 @@ public class TwoSelectionSort {
                     min=j;
                 }
             }
-            int temp=a[i];
-            a[i]=a[min];
-            a[min]=temp;
 
-            temp=a[a.length-i-1];
+            int temp=a[a.length-i-1];
             a[a.length-i-1]=a[max];
             a[max]=temp;
 
+            //防止最后的时候 隔壁两个互换
+            if(!(i==(a.length-i-2) || i==(a.length-i+1))){
+                temp=a[i];
+                a[i]=a[min];
+                a[min]=temp;
+            }
+
+
+
+            System.out.println("i"+i+" max"+max+" min"+min+" a.length-i-1"+(a.length-i-1));
             for(int ii=0;ii<a.length;ii++){
                 System.out.print(a[ii]+" ");
             }
