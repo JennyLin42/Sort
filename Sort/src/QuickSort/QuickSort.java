@@ -12,7 +12,7 @@ public class QuickSort {
 //        int[] a=new int[]{5,6,4,8,9,2,1,3,7};
 //        sortFrist(a,0,a.length-1);
 
-        int[] array = { 49, 38, 65, 97, 76, 13, 27 };
+        int[] array = { 49, 38, 65, 97, 76, 13, 27 ,22,77,99};
         sort(array, 0, array.length - 1);
         for(int i=0;i<array.length;i++){
             //System.out.print("aa");
@@ -23,6 +23,11 @@ public class QuickSort {
 
     public static int sortFrist(int[] array,int low,int high){
         int key = array[low];
+
+        for(int i=0;i<array.length;i++){
+            //System.out.print("aa");
+            System.out.print(array[i]+" ");
+        }
         while (low < high)
         {
                 /*从后向前搜索比key小的值*/

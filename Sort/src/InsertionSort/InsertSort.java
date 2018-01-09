@@ -7,8 +7,8 @@ package InsertionSort;
  */
 public class InsertSort {
     public static void main(String[] args){
-        int[] a=new int[]{2,1,4,7,2,6,10,8,9};
-
+        //int[] a=new int[]{2,1,4,7,2,6,10,8,9};
+        int[] a=new int[]{ 49, 38, 65, 97, 76, 13, 27 ,22,77,99 };
         for(int i=1;i<a.length;i++){
             if(a[i-1]>a[i]){
                 int temp=a[i];

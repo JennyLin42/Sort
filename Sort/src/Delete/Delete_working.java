@@ -41,7 +41,7 @@ public class Delete_working {
 		int i =1;
 		for (String string : filenames) {
 			String delete_Working = "";
-			if(string.contains("_working")){
+			//if(string.contains("_working")){
 				delete_Working = string.replace("_working", "");
 				System.out.println("******"+(i++)+"*******");
 				System.out.println("----before:"+string+"-------");
@@ -49,12 +49,12 @@ public class Delete_working {
 				System.out.println("*****************");
 				copyFile(new File(srcFile+string),
 						new File(sNew+delete_Working));
-			}
+			//}
 		}
 	}
 	
 	public static void main(String[] args) throws IOException {
-		showTime("C:\\Users\\LINJE2\\Desktop\\wordlpn\\");
+		showTime("C:\\Users\\LINJE2\\Desktop\\rename\\");
 	}
 }
 

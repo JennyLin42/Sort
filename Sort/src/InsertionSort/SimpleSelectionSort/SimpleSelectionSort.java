@@ -1,7 +1,7 @@
 package InsertionSort.SimpleSelectionSort;
 
 /**
- * 简单选择排序（应该是稳定排序）
+ * 简单选择排序（是不稳定排序）
  * 每一步都能确定一个数值的所在位置 最快能知道某个数值的位置在哪里
  * 每趟循环只能确定一个元素排序后的定位
  * Created by LINJE2 on 9/15/2017.
